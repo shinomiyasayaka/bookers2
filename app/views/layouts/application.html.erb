@@ -28,12 +28,12 @@
         <%= link_to "Log in", new_user_session_path %>
     <% end %>
   </header>
-
+  <main>
+    <%= yield %>
+    </main>
   <footer>
     <p>CopyRight Infratop.inc</p>
   </footer>
 
-
-    <%= yield %>
   </body>
 </html>
