@@ -1,12 +1,16 @@
-<%= render 'users/list', user: @user %>
-<%= render 'books/list', book: @book %>
+<div class="container px-5 px-sm-0">
+ <div class="row">
+  <div class="col-md-3">
+    <%= render 'users/list', user: @user %>
+    <%= render 'books/list', book: @book %>
+  </div>
 
-
+  <div class="col-md-8 offset-md-1">
 <h1>Users</h1>
 
 <% @users.each do |user| %>
 
-  <table>
+  <table class="table table-hover table-inverse">
     <thead>
     <tr>
       <th>image</th>
@@ -23,3 +27,6 @@
     </tbody>
   </table>
 <% end %>
+    </div>
+  </div>
+</div>
